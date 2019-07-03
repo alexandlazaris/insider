@@ -1,13 +1,11 @@
 #!/bin/bash
-output=./output.txt
+output="./output.txt"
 
 echo "Date info"
-date=$(date)  
-echo "$user" >> $output
+echo $(date) >> $output
 
 echo "User info"
-user=$(whoami)  
-echo "$user" >> $output
+echo $(whoami) >> $output
 
 echo "Operating system info"
 osName=$(systeminfo | grep "OS Name")
